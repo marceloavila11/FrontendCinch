@@ -1,0 +1,49 @@
+.loading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 1000;
+  }
+  
+  .loading-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    top: 50px; /* Ajusta este valor para mover todo el contenido más arriba o más abajo */
+  }
+  
+  .loading-icon {
+    width: 120px; /* Tamaño del ícono */
+    height: 120px; /* Tamaño del ícono */
+    margin-top: 0px; /* Ajusta este valor para mover el ícono más arriba o más abajo */
+  }
+  
+  .loading-spinner {
+    border: 10px solid #f3f3f3; /* Grosor de la rueda */
+    border-top: 10px solid #C1272D; /* Grosor de la rueda */
+    border-radius: 50%;
+    width: 150px; /* Tamaño de la rueda */
+    height: 150px; /* Tamaño de la rueda */
+    animation: spin 2s linear infinite;
+    margin-top: -140px; /* Ajusta este valor para mover el spinner más arriba o más abajo */
+  }
+  
+  .loading-text {
+    margin-top: 80px; /* Ajusta este valor para mover el texto más arriba o más abajo */
+    font-size: 1.5em;
+    color: #C1272D;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  

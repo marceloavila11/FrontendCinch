@@ -1,0 +1,8 @@
+/* src/css/lineChart.css */
+
+.line-chart-container {
+  margin: 20px 0;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto; /* Añade desplazamiento horizontal si el gráfico es demasiado ancho */
+}

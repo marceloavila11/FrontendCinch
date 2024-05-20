@@ -1,0 +1,136 @@
+/* src/css/NavBar.css */
+
+.sidebar {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #333;
+  overflow-y: auto;
+  padding-top: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  transition: width 0.3s ease-in-out;
+  white-space: nowrap;
+}
+
+.sidebar.collapsed {
+  width: 80px;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  position: relative;
+}
+
+.sidebar ul li a,
+.sidebar ul li button {
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, padding 0.3s, box-shadow 0.3s;
+  border-radius: 5px;
+  margin: 5px 10px;
+}
+
+.sidebar ul li a .icon,
+.sidebar ul li button .icon {
+  display: inline-block;
+  width: 30px;
+}
+
+.sidebar ul li a .text,
+.sidebar ul li button .text {
+  display: inline-block;
+  transition: opacity 0.3s ease, width 0.3s ease;
+}
+
+.sidebar.collapsed ul li a .text,
+.sidebar.collapsed ul li button .text {
+  opacity: 0;
+  width: 0;
+}
+
+.sidebar ul li a:hover,
+.sidebar ul li button:hover {
+  background-color: #C1272D;
+  color: #FFF;
+  padding-left: 30px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo para el botón de mostrar/ocultar */
+.sidebar ul li.toggle-item button {
+  background-color: #555;
+  color: white;
+  font-weight: bold;
+}
+
+.sidebar ul li.toggle-item button:hover {
+  background-color: #777;
+  color: #FFF;
+}
+
+/* Estilo adicional para el icono del botón de mostrar/ocultar */
+.sidebar ul li.toggle-item .icon {
+  font-size: 20px;
+}
+
+.sidebar ul li.toggle-item .text {
+  font-size: 18px;
+}
+
+.submenu-container {
+  position: relative;
+}
+
+.submenu {
+  max-height: 0;
+  overflow: hidden;
+  background-color: #444;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  transition: max-height 0.5s ease-out, padding 0.5s ease-out;
+}
+
+.submenu-container:hover .submenu {
+  max-height: 300px;
+  padding: 10px 0 20px 0;
+}
+
+.submenu li {
+  margin: 0;
+}
+
+.submenu li a {
+  padding: 10px 20px;
+  font-size: 16px;
+  display: block;
+  text-decoration: none;
+  color: white;
+  background-color: #444;
+  transition: background-color 0.3s, color 0.3s, padding 0.3s;
+  border-radius: 5px;
+  margin: 5px 10px;
+}
+
+.submenu li a:hover {
+  background-color: #C1272D;
+  color: #FFF;
+  padding-left: 30px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}

@@ -1,0 +1,56 @@
+/* src/css/Dashboard.css */
+
+.dashboard-container {
+  display: flex;
+  height: 100vh;
+}
+
+.dashboard-container.collapsed .sidebar {
+  width: 80px;
+}
+
+.dashboard-container.collapsed .content-container {
+  margin-left: 80px;
+}
+
+.content-container {
+  flex-grow: 1;
+  position: relative;
+  padding: 20px;
+  margin-left: 250px;
+  box-sizing: border-box;
+  transition: margin-left 0.3s ease-in-out;
+}
+
+.header-bar {
+  background-color: #C1272D;
+  color: white;
+  padding: 15px;
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-bottom: 3px solid #A02123;
+}
+
+.header-text {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.main-content {
+  padding: 20px;
+  background-color: #FFFFFF;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}

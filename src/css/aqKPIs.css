@@ -1,0 +1,135 @@
+/* src/css/aqKPIs.css */
+
+.aq-kpis-container {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  max-width: 100%; /* Asegúrate de que no se desborde */
+  overflow-x: auto; /* Añadir desplazamiento horizontal si es necesario */
+}
+
+.aq-kpis-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.aq-kpis-header h1 {
+  color: #C1272D;
+  font-size: 2.5em;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.aq-kpis-summary {
+  margin-bottom: 30px;
+}
+
+.aq-kpis-table-container {
+  margin-bottom: 20px;
+  overflow-x: auto; /* Añadir desplazamiento horizontal si es necesario */
+}
+
+.aq-kpis-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.aq-kpis-table th,
+.aq-kpis-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: center;
+  white-space: nowrap; /* Evita que el contenido de las celdas se rompa en varias líneas */
+}
+
+.aq-kpis-table th {
+  background-color: #C1272D;
+  color: #fff;
+  font-weight: bold;
+}
+
+.aq-kpis-table td {
+  color: #333;
+}
+
+.aq-kpis-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.aq-kpis-table tr:hover {
+  background-color: #e6e6e6;
+}
+
+.aq-kpis-charts {
+  margin-top: 20px;
+  max-width: 100%;
+  overflow-x: auto; /* Añadir desplazamiento horizontal si es necesario */
+}
+
+.aq-kpis-charts h2 {
+  text-align: center;
+  color: #C1272D;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.view-selector {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #fff;
+  border: 2px solid #C1272D;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1000;
+}
+
+.view-selector-header {
+  margin-bottom: 10px;
+}
+
+.view-selector-header h3 {
+  color: #C1272D;
+  margin: 0;
+  font-size: 1.2em;
+}
+
+.view-selector button {
+  background-color: #C1272D;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin: 5px 0;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  display: flex;
+  align-items: center;
+  font-size: 1em;
+}
+
+.view-selector button i {
+  margin-right: 10px;
+}
+
+.view-selector button:hover {
+  background-color: #A0201F;
+  transform: translateY(-2px);
+}
+
+.view-selector button:active {
+  transform: translateY(0);
+}
